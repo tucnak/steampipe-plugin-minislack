@@ -1,4 +1,4 @@
-module github.com/turbot/steampipe-plugin-slack
+module github.com/tucnak/steampipe-plugin-slack
 
 go 1.21
 
