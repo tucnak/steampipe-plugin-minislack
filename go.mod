@@ -1,4 +1,4 @@
-module github.com/tucnak/steampipe-plugin-slack
+module github.com/tucnak/steampipe-plugin-minislack
 
 go 1.21
 
