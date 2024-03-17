@@ -71,7 +71,7 @@ func listConversations(ctx context.Context, d *plugin.QueryData, _ *plugin.Hydra
 		plugin.Logger(ctx).Error("slack_conversation.listConversations", "connection_error", err)
 		return nil, err
 	}
-	opts := &slack.GetConversationsParameters{Limit: 1000, Types: []string{"public_channel", "private_channel", "im", "mpim"}}
+	opts := &slack.GetConversationsParameters{Limit: 1000, Types: []string{"public_channel"}}
 
 	// Reduce the basic request limit down if the user has only requested a small number of rows
 	if d.QueryContext.Limit != nil {
